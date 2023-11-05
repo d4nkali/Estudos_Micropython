@@ -1,0 +1,44 @@
+1) Baixe o MicroPython:
+
+Acesse o site oficial do MicroPython em https://micropython.org/ e vá para a seção de downloads. Escolha a versão adequada para a sua placa ESP32. Faça o download do firmware apropriado para o seu dispositivo.
+
+
+2) Instale o Python (caso não tenha):
+
+O MicroPython é uma implementação mínima do Python e requer o Python instalado no seu computador. Você pode baixar a versão mais recente do Python para Windows em https://www.python.org/downloads/windows/. Certifique-se de adicionar o Python ao PATH durante a instalação.
+
+
+3) Instale as ferramentas necessárias:
+
+Você precisará das ferramentas para gravar o firmware na placa. Para ESP32 o esptool.py.
+
+Para instalar o esptool.py no Windows, abra o prompt de comando (cmd) e execute o seguinte comando (você pode precisar usar pip3 em vez de pip dependendo da sua configuração):
+
+pip install esptool.py
+
+
+4) Limpe a placa:
+
+Antes de instalar o micropyton, certifique de que a sua esp32 ou esp8266 esteja sem codigo, para isso execute o seguinte codigo para esp32:
+
+esptool.py --port COMx erase_flash
+
+
+5) Grave o MicroPython na placa:
+
+Conecte a placa ao seu computador via USB e abra o prompt de comando.
+
+Para ESP32, use o seguinte comando (substitua COMx e "esp32-firmware".bin conforme necessário):
+
+esptool.py --chip esp32 --port COMx --baud 115200 write_flash -z 0x1000 "esp32-firmware".bin
+
+
+6) Conecte-se à placa via REPL ou Instale uma IDE :
+
+Após gravar o MicroPython na placa, você pode usar um programa de terminal serial como o PuTTY ou o Tera Term para se conectar à placa. Selecione a porta COM correta e defina a velocidade de transmissão para 115200 baud. Isso permitirá que você interaja com a placa e execute código Python diretamente nela.
+
+Ou então baixe uma IDE com suporte ao micropython como a Arduino Labs disponivel em https://labs.arduino.cc/en/labs/micropython; apos instalar abra o programa e em 
+conect e selecione a porta COM da placa.
+
+
+Agora você deve ter o MicroPython instalado e funcionando na sua placa ESP32 no Windows. Você pode começar a programar em Python na placa e aproveitar todas as funcionalidades do MicroPython. Certifique-se de consultar a documentação específica da sua placa para obter informações detalhadas sobre como usar as funcionalidades do hardware.
