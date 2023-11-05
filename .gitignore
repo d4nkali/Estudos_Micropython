@@ -1,0 +1,8 @@
+# Igninore venv
+
+venv/*
+.venv/*
+
+# Ignore .vscode
+
+.vscode/*
