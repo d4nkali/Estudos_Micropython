@@ -2,6 +2,9 @@
 
 venv/*
 .venv/*
+/Firmware_das_Placas/.venv/*
+/Firmware_das_Placas/.venv/
+/Firmware_das_Placas/.venv/Lib/*
 
 # Ignore .vscode
 
