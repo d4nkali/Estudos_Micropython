@@ -1,3 +1,6 @@
+# Teste do sensor LDR Micropython
+
+# Importa as bibliotecas
 from machine import Pin, ADC
 import time
 
@@ -14,8 +17,9 @@ while True:
     # Se o valor lido for maior que 200, acender o LED
     if ldr_value > 200:
         led_pin.on  # Ligar o LED
+    # Seno
     else:
         led_pin.off  # Desligar o LED
 
-    # Aguardar um curto perodo de tempo antes de ler novamente (evita leituras rpidas)
-    time.sleep(0.5)
+    # Aguarda 2 segundos
+    time.sleep(2)
