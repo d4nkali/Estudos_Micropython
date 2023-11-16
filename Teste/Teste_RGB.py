@@ -9,10 +9,16 @@ verde = machine.Pin(12, machine.Pin.OUT)  # Define o pino GPIO12 como do pino ve
 azul = machine.Pin(13, machine.Pin.OUT)  # Define o pino GPIO2 como do pino azul LED RGB 
 
 while True: # Cria um loop
-    vermelho.value(not led.value()) # Alterna os valores entre ligado e desligado
+    vermelho.value(not vermelho.value()) # Alterna os valores entre ligado e desligado
     time.sleep(1) # Aguarda 1 segundo
-    verde.value(not led.value()) # Alterna os valores entre ligado e desligado
+    vermelho.value(not vermelho.value()) # Alterna os valores entre ligado e desligado
     time.sleep(1) # Aguarda 1 segundo
-    azul.value(not led.value()) # Alterna os valores entre ligado e desligado
+    verde.value(not verde.value()) # Alterna os valores entre ligado e desligado
+    time.sleep(1) # Aguarda 1 segundo
+    verde.value(not verde.value()) # Alterna os valores entre ligado e desligado
+    time.sleep(1) # Aguarda 1 segundo
+    azul.value(not azul.value()) # Alterna os valores entre ligado e desligado
+    time.sleep(1) # Aguarda 1 segundo
+    azul.value(not azul.value()) # Alterna os valores entre ligado e desligado
     time.sleep(1) # Aguarda 1 segundo
     
