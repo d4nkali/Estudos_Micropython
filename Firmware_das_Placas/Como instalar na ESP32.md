@@ -1,8 +1,8 @@
-# Como Instalar o MicroPython
+# Como Instalar o MicroPython na ESP32
 
 1) Baixe o **MicroPython**:
 
-Acesse o site oficial do [MicroPython nesse link](https://micropython.org/) e vá para a seção de **downloads**. Escolha a versão adequada para a sua placa ESP32. Faça o download do firmware apropriado para o seu dispositivo.
+Acesse o site oficial do [MicroPython nesse link](https://micropython.org/) e vá para a seção de **downloads**. Escolha a versão adequada para a sua placa **ESP32**. Faça o download do firmware apropriado para o seu dispositivo.
 
 #
 
