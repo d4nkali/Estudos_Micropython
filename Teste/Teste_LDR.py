@@ -17,7 +17,7 @@ while True:
     # Se o valor lido for maior que 200, acender o LED
     if ldr_value > 200:
         led_pin.on  # Ligar o LED
-    # Seno
+    # Se não
     else:
         led_pin.off  # Desligar o LED
 
