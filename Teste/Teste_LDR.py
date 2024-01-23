@@ -4,7 +4,7 @@
 from machine import Pin, ADC
 import time
 
-# Configurar o pino do sensor LDR como uma entrada analgica
+# Configurar o pino do sensor LDR como uma entrada analogica
 ldr_pin = ADC(Pin(A0))
 
 # Configurar o pino do LED como uma sada digital
@@ -17,9 +17,12 @@ while True:
     # Se o valor lido for maior que 200, acender o LED
     if ldr_value > 200:
         led_pin.on  # Ligar o LED
-    # Se não
+    # Senao
     else:
         led_pin.off  # Desligar o LED
+
+    # Imprimir o valor na tela
+    print('Valor do pino Analogico:', analog_valor)
 
     # Aguarda 2 segundos
     time.sleep(2)
